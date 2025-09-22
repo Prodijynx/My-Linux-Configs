@@ -1,0 +1,44 @@
+{
+	"height": 34,
+	"spacing": 4,
+
+	// MODULE CONTENTS
+	"pulseaudio": {
+		"format": "{volume}% {icon}",
+		"format-icons": {"default": ["", ""]},
+		"format-muted": "",
+		"on-click": "pavucontrol"
+
+	},
+	"clock": {
+		"format": "{:%R}",
+		"timezone": "America/Denver",
+		"tooltip-format": "{:%a, %B, %g}"
+	},
+	"power-profiles-daemon": {
+		"format": "{icon}",
+		"tooltip-format": "{profile}",
+		"tooltip": true,
+		"format-icons": {
+			"default": "",
+			"performance": "",
+			"balanced": "",
+			"power-saver": ""
+		}
+	},
+
+
+
+
+	// GUI STUFF
+	"modules-left": [
+		"hyprland/workspaces"
+	],
+	"modules-right": [
+		"power-profiles-daemon",
+		"pulseaudio"
+	],
+	"modules-center": [
+		"clock"
+	],
+}

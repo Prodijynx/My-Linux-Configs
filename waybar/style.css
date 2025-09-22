@@ -1,0 +1,29 @@
+@import "mocha.css";
+
+#waybar {
+	background: transparent;
+	color: @blue;
+	margin: 5px 5px;
+}
+
+#pulseaudio {
+  color: @blue;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#power-profiles-daemon {
+  color: @blue;
+  border-radius: 1rem 0px 0px 1rem;
+}
+
+#clock {
+  color: @blue;
+  border-radius: 1rem 0px 0px 1rem;
+}
+
+#window,
+#workspaces button {
+	color: @blue;
+}
