@@ -1,4 +1,5 @@
 By default, this in the hyprland.conf
+
 $terminal = alacritty
 
 $fileManager = nautilus
