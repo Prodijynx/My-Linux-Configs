@@ -1,9 +1,20 @@
-I post my rices here (maybe)
+By default, this in the hyprland.conf
+$terminal = alacritty
+$fileManager = nautilus
+$menu = rofi -no-levenshtein-sort -show drun
+$browser = firefox
+$screenshot = grim -g "$(slurp -w 0)" - | wl-copy
+$screenshotmonitor = grim -o DP-3 - | wl-copy
 
-WARNING: This config doesnt enable dark mode for GTK apps (Cuz I didnt know how to do that).
+exec-once = waybar
+exec-once = mako
+exec-once = wl-paste --watch cliphist store
+exec-once = hyprpaper
+exec-once = discord
+exec-once = steam
+exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-I use nwg-look to enable dark mode on my apps
-
+make sure to get rid of those if you dont have them installed!
 
 
 
