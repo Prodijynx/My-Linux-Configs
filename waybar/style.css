@@ -1,29 +1,93 @@
 @import "mocha.css";
 
 #waybar {
-	background: transparent;
-	color: @blue;
-	margin: 5px 5px;
+	background: @crust;
+	color: @crust;
+	margin: 0px;
 }
 
 #pulseaudio {
-  color: @blue;
-  border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+	color: @text;
+	border-radius: 13px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background: @mantle;
+	padding: 10px;
+	margin: 0px;
 }
 
-#power-profiles-daemon {
-  color: @blue;
-  border-radius: 1rem 0px 0px 1rem;
-}
+/* #power-profiles-daemon {
+	color: @text;
+	border-radius: 1rem 0px 0px 1rem;
+} */
 
 #clock {
-  color: @blue;
-  border-radius: 1rem 0px 0px 1rem;
+	color: @text;
+	border-radius: 13px;
+	background: @mantle;
+	padding: 0px 20px 0px 20px;
 }
 
 #window,
+
+#workspaces {
+	background: @mantle;
+	padding: 0px 0px 0px 0px;
+	border-radius: 13px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
 #workspaces button {
-	color: @blue;
+	color: @text;
+}
+#workspaces button.active {
+	color: @text;
+}
+
+#taskbar button {
+	border-radius: 13px;
+	background: @mantle;
+	margin: 0px 4px;
+	padding: 0px 5px;
+	color: @text;
+}
+
+#taskbar {
+	border-radius: 13px;
+	padding: 0px 5px 0px 5px;
+	background: transparent;
+}
+
+#taskbar button.active {
+	background: @text;
+	color: @mantle;
+}
+
+#battery {
+	border-radius: 13px;
+	background: @mantle;
+	padding: 0px 10px 0px 10px;
+	color: @text;
+}
+
+#tray {
+	border-radius: 13px;
+	background: @mantle;
+	padding: 0px 10px 0px 10px;
+	color: @text;
+}
+
+#bluetooth {
+	border-radius: 13px;
+	background: @mantle;
+	padding: 0px 10px 0px 10px;
+	color: @text;
+}
+
+#network {
+	border-radius: 13px;
+	background: @mantle;
+	padding: 0px 10px 0px 10px;
+	color: @text;
 }
