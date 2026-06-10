@@ -1,8 +1,38 @@
+[
 {
-	"height": 34,
+	"height": 39,
 	"spacing": 4,
+	"position": "top",
+	// "output": "eDP-1",
 
 	// MODULE CONTENTS
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"active": "",
+			"default": ""
+		}
+	},
+
+	"tray": {
+		"icon-size": 20,
+		"smooth-scrolling-threshold": 1.00,
+		"spacing": 2,
+		"icons": "{breeze}"
+	},
+
+	"battery": {
+		"bat": "BAT0",
+		"interval": 60,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{capacity}% {icon}",
+		"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂁", "󰁹"],
+		"max-length": 25
+	},
 	"pulseaudio": {
 		"format": "{volume}% {icon}",
 		"format-icons": {"default": ["", ""]},
@@ -10,10 +40,27 @@
 		"on-click": "pavucontrol"
 
 	},
+	"wlr/taskbar": {
+		"format": "name",
+		"on-click": "activate",
+		"on-click-right": "close"
+	},
 	"clock": {
-		"format": "{:%R}",
+		"format": "{:%a, %b %d, %R}",
 		"timezone": "America/Denver",
-		"tooltip-format": "{:%a, %B, %g}"
+	},
+	"bluetooth": {
+		"format": "󰂯 {status}",
+		"format-connected": "󰂱",
+		"on-click": "blueman-manager"
+	},
+	"network": {
+		"format": "",
+		"format-wifi": "   {essid}",
+		"format-ethernet": "   {essid}",
+		"format-disconnected": "󰤮",
+		"format-disabled": "",
+		"on-click": "alacritty -e nmtui"
 	},
 	"power-profiles-daemon": {
 		"format": "{icon}",
@@ -24,10 +71,8 @@
 			"performance": "",
 			"balanced": "",
 			"power-saver": ""
-		}
+		},
 	},
-
-
 
 
 	// GUI STUFF
@@ -35,10 +80,35 @@
 		"hyprland/workspaces"
 	],
 	"modules-right": [
-		"power-profiles-daemon",
+		"tray",
+		"battery",
+		"bluetooth",
+		"network",
 		"pulseaudio"
 	],
 	"modules-center": [
 		"clock"
 	],
-}
+}/*,
+{
+	"height": 51,
+	"spacing": 10,
+	"position": "bottom",
+	// MODULE CONTENTS
+	"wlr/taskbar": {
+		"format": "{name}",
+		"icon-size": 39,
+		"on-click": "activate",
+		"on-click-right": "close",
+	},
+	"tray": {
+		"icon-size": 39
+	},
+	"modules-right": [
+	],
+	"modules-left": [
+	"wlr/taskbar"
+	],
+	"modules-center": [
+	]
+}*/]
