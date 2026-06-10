@@ -1,2 +1,4 @@
-Theres some apps in the hyprland.conf that you may not have installed, make sure to install them or remove the lines before using this configuration.
-Reminder that hyprpaper.conf is most likely pointing to a non existent file path
+Theres some apps in the hyprland.lua that you may not have installed, make sure to install them or remove the lines before using this configuration.
+
+ENSURE THAT YOU HAVE LOOKED INSIDE hypaper.conf TO PUT IN YOUR OWN FILEPATHS AND MONITOR NAME
+hyprlock.conf and hypridle.conf are not updated yet, sorry :)
